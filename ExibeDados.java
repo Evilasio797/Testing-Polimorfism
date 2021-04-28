@@ -1,3 +1,6 @@
+import java.util.List;
+import java.util.ArrayList;
+
 public class ExibeDados {
     
     public static void main(String args[]){
@@ -5,6 +8,8 @@ public class ExibeDados {
         s.criarContaXPTOBasic(1);
         s.criarContaXPTOPlus(2);
         s.criarContaXPTOExtreme(3);
+        
+        
         for(int i=1; i<=3; i++){
             s.creditar(i, 1000);
            
@@ -14,7 +19,10 @@ public class ExibeDados {
             s.debitar(i, 10);
             
         }
+        s.creditar(1, 5);
         System.out.println(s.consultarSaldo(1));
+        System.out.println(s.consultarSaldo(2));
+        System.out.println(s.consultarSaldo(3));
         if(s.consultarSaldo(1) == 990) {
 			System.out.println("Deu certo o primeiro teste");
 		}else{

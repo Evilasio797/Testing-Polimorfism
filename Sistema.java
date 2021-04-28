@@ -3,12 +3,13 @@ import java.util.List;
 
 public class Sistema {
  
-    List<XPTOBasic> lista = new ArrayList<XPTOBasic>();    
+    List<Conta> lista = new ArrayList<Conta>();    
   
     public void criarContaXPTOBasic(int id){
-        XPTOBasic b = new XPTOBasic(id);
-        b.setId(id);
+        Conta b = new XPTOBasic(id);
+        //b.setId(id);
         lista.add(b);
+        System.out.println(lista);
     }
 
     public void criarContaXPTOPlus(int id){
@@ -22,7 +23,7 @@ public class Sistema {
     }
 
     public void creditar(int id, double valor){
-       for(XPTOBasic c : lista){
+       for(Conta c : lista){
            if(c.getId() == id){
                c.credito(valor);
            }
