@@ -6,29 +6,30 @@ public class Sistema {
     List<Conta> lista = new ArrayList<Conta>();    
   
     public void criarContaXPTOBasic(int id){
-        Conta b = new XPTOBasic(id);
-        //b.setId(id);
+        Conta b = new XPTOBasic();
+        b.setId(id);
         lista.add(b);
         System.out.println(lista);
     }
 
     public void criarContaXPTOPlus(int id){
-        Conta c = new XPTOPlus(id);
+        Conta c = new XPTOPlus();
         //lista.add(c);
     }
 
     public void criarContaXPTOExtreme(int id){
-        Conta d = new XPTOExtreme(id);
+        Conta d = new XPTOExtreme();
         //lista.add(d);
     }
 
     public void creditar(int id, double valor){
-       for(Conta c : lista){
-           if(c.getId() == id){
-               c.credito(valor);
+       for(Conta x : lista){
+           if(x.getId() == id){
+               x.credito(valor);
            }
        }
-    }
+    }//Alterar Conta para XPTOBasic
+
     
     public void debitar(int identificador, double valor ) {
 		for (Conta conta : lista) {

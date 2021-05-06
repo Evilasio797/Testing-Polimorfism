@@ -2,10 +2,6 @@ public abstract class Conta{
 	int id;
 	double saldo;
 	
-	public Conta(int id){
-		this.id = id;
-	}
-
     public int getId() {
         return this.id;
     }

@@ -1,12 +1,7 @@
 public class XPTOPlus extends Conta{
  
     private double saldo = 0;
-			
-	public XPTOPlus(int id){
-		super(id);
-		//this.saldo = saldo;
-		
-	}
+	private int id;		
 
     public double getSaldo() {
         return this.saldo;
@@ -14,6 +9,14 @@ public class XPTOPlus extends Conta{
 
     public void setSaldo(double saldo) {
         this.saldo = saldo;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 	
 	public void credito(double valor){

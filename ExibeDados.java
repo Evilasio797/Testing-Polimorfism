@@ -21,8 +21,7 @@ public class ExibeDados {
         }
         s.creditar(1, 5);
         System.out.println(s.consultarSaldo(1));
-        System.out.println(s.consultarSaldo(2));
-        System.out.println(s.consultarSaldo(3));
+        
         if(s.consultarSaldo(1) == 990) {
 			System.out.println("Deu certo o primeiro teste");
 		}else{
