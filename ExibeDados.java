@@ -19,7 +19,7 @@ public class ExibeDados {
             s.debitar(i, 10);
             
         }
-        s.creditar(1, 5);
+   
         System.out.println(s.consultarSaldo(1));
         
         if(s.consultarSaldo(1) == 990) {

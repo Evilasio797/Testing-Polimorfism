@@ -1,7 +1,11 @@
 public abstract class Conta{
 	int id;
-	double saldo;
+	private double saldo = 0;
 	
+    public Conta(int id){
+        this.setId(id);
+    }
+
     public int getId() {
         return this.id;
     }
@@ -23,9 +27,9 @@ public abstract class Conta{
 	public abstract void debito(double valor);
 	
 	public double consultaSaldo(){
-		return saldo;
+		System.out.println("entrou");
+        return this.saldo;
 	} 
 
-    
 
 }
